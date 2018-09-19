@@ -1,10 +1,12 @@
 package br.com.veronezitecnologia.meusjogos
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
 import br.com.veronezitecnologia.meusjogos.adapter.JogoAdapter
+import br.com.veronezitecnologia.meusjogos.detalhejogo.DetalheActivity
 import br.com.veronezitecnologia.meusjogos.model.Jogo
 import kotlinx.android.synthetic.main.activity_lista_jogos.*
 
@@ -15,9 +17,12 @@ class ListaJogosActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_lista_jogos)
 
-        rvMeusJogos.adapter = JogoAdapter(jogos(), this, {
-            Log.i("TAG", "MEU ITEM")
+        rvMeusJogos.adapter = JogoAdapter(jogos(), this, {jogo ->
+           val detalheIntent = Intent(this, DetalheActivity::class.java)
+            detalheIntent.putExtra("JOGO", jogo)
+            startActivity(detalheIntent)
         })
+
 //Grid
 //val layoutManager = GridLayoutManager(this, 2)
 
@@ -35,7 +40,7 @@ class ListaJogosActivity : AppCompatActivity() {
 
     private fun jogos(): List<Jogo> {
         return listOf(Jogo(R.drawable.spiderman,
-                "SpiderMan",
+                "SpiderMan1",
                 2018,
                 "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
                         "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
@@ -44,7 +49,7 @@ class ListaJogosActivity : AppCompatActivity() {
                         "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
                         " você já jogou."),
                 Jogo(R.drawable.spiderman,
-                        "SpiderMan",
+                        "SpiderMan2",
                         2018,
                         "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
                                 "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
@@ -53,7 +58,7 @@ class ListaJogosActivity : AppCompatActivity() {
                                 "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
                                 " você já jogou."),
                 Jogo(R.drawable.spiderman,
-                        "SpiderMan",
+                        "SpiderMan3",
                         2018,
                         "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
                                 "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
@@ -62,7 +67,7 @@ class ListaJogosActivity : AppCompatActivity() {
                                 "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
                                 " você já jogou."),
                 Jogo(R.drawable.spiderman,
-                        "SpiderMan",
+                        "SpiderMan4",
                         2018,
                         "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
                                 "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
@@ -71,7 +76,7 @@ class ListaJogosActivity : AppCompatActivity() {
                                 "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
                                 " você já jogou."),
                 Jogo(R.drawable.spiderman,
-                        "SpiderMan",
+                        "SpiderMan5",
                         2018,
                         "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
                                 "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
@@ -80,7 +85,7 @@ class ListaJogosActivity : AppCompatActivity() {
                                 "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
                                 " você já jogou."),
                 Jogo(R.drawable.spiderman,
-                        "SpiderMan",
+                        "SpiderMan6",
                         2018,
                         "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
                                 "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
@@ -89,7 +94,7 @@ class ListaJogosActivity : AppCompatActivity() {
                                 "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
                                 " você já jogou."),
                 Jogo(R.drawable.spiderman,
-                        "SpiderMan",
+                        "SpiderMan7",
                         2018,
                         "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
                                 "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
@@ -98,7 +103,7 @@ class ListaJogosActivity : AppCompatActivity() {
                                 "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
                                 " você já jogou."),
                 Jogo(R.drawable.spiderman,
-                        "SpiderMan",
+                        "SpiderMan8",
                         2018,
                         "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
                                 "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
@@ -107,7 +112,7 @@ class ListaJogosActivity : AppCompatActivity() {
                                 "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
                                 " você já jogou."),
                 Jogo(R.drawable.spiderman,
-                        "SpiderMan",
+                        "SpiderMan9",
                         2018,
                         "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
                                 "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
