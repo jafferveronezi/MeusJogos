@@ -7,18 +7,19 @@ import android.support.v7.widget.RecyclerView.Adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import br.com.veronezitecnologia.meusjogos.JogoViewHolder
 import br.com.veronezitecnologia.meusjogos.R
 import br.com.veronezitecnologia.meusjogos.model.Jogo
 import kotlinx.android.synthetic.main.meu_jogo_item.view.*
 
 class JogoAdapter(private val jogos: List<Jogo>,
                   private val context: Context,
-                  val listener: (Jogo) -> Unit) : Adapter<JogoAdapter.ViewHolder>() {
+                  val listener: (Jogo) -> Unit) : Adapter<JogoViewHolder>() {
 
 //Método que recebe o ViewHolder e a posição da lista.
 //Aqui é recuperado o objeto da lista de Objetos pela posição e associado à ViewHolder.
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: JogoViewHolder, position: Int) {
         val jogo = jogos[position]
         holder?.let {
             it.bindView(jogo, listener)
@@ -26,31 +27,14 @@ class JogoAdapter(private val jogos: List<Jogo>,
     }
 
     //Método que deverá retornar layout criado pelo ViewHolder já inflado em uma view.
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): JogoViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.meu_jogo_item, parent, false)
-        return ViewHolder(view)
+        return JogoViewHolder(view)
     }
 
     //Método que deverá retornar quantos itens há na lista.
     override fun getItemCount(): Int {
         return jogos.size
-    }
-
-    /*
-    Com o ViewHolder iremos relacionar o layout criado e adicionar os valores a ele*/
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bindView(jogo: Jogo,
-                     listener: (Jogo) -> Unit) = with(itemView) {
-            val ivJogo = ivJogo
-            val tvNome = tvNome
-            val tvAnoLancamento = tvAnoLancamento
-            val tvDescricao = tvDescricao
-            ivJogo.setImageDrawable(ContextCompat.getDrawable(context, jogo.resourceId))
-            tvNome.text = jogo.titulo
-            tvAnoLancamento.text = jogo.anoLancamento.toString()
-            tvDescricao.text = jogo.descricao
-            setOnClickListener { listener(jogo) }
-        }
     }
 
     interface ClickListener {

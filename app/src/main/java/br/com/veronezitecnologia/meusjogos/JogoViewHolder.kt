@@ -6,6 +6,10 @@ import android.view.View
 import br.com.veronezitecnologia.meusjogos.model.Jogo
 import kotlinx.android.synthetic.main.meu_jogo_item.view.*
 
+/*
+* Com o ViewHolder iremos relacionar o layout criado e adicionar os valores a ele
+*/
+
 class  JogoViewHolder(itemView: View) :
         RecyclerView.ViewHolder(itemView) {
 
