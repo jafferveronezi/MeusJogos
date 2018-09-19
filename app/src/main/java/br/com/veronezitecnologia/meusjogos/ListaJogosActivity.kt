@@ -42,7 +42,79 @@ class ListaJogosActivity : AppCompatActivity() {
                         "mecânica de combate improvisada, habilidades acrobáticas dinâmicas, " +
                         "movimentos urbanos brandos e interações com o ambiente. " +
                         "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
-                        " você já jogou."))
+                        " você já jogou."),
+                Jogo(R.drawable.spiderman,
+                        "SpiderMan",
+                        2018,
+                        "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
+                                "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
+                                "mecânica de combate improvisada, habilidades acrobáticas dinâmicas, " +
+                                "movimentos urbanos brandos e interações com o ambiente. " +
+                                "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
+                                " você já jogou."),
+                Jogo(R.drawable.spiderman,
+                        "SpiderMan",
+                        2018,
+                        "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
+                                "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
+                                "mecânica de combate improvisada, habilidades acrobáticas dinâmicas, " +
+                                "movimentos urbanos brandos e interações com o ambiente. " +
+                                "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
+                                " você já jogou."),
+                Jogo(R.drawable.spiderman,
+                        "SpiderMan",
+                        2018,
+                        "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
+                                "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
+                                "mecânica de combate improvisada, habilidades acrobáticas dinâmicas, " +
+                                "movimentos urbanos brandos e interações com o ambiente. " +
+                                "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
+                                " você já jogou."),
+                Jogo(R.drawable.spiderman,
+                        "SpiderMan",
+                        2018,
+                        "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
+                                "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
+                                "mecânica de combate improvisada, habilidades acrobáticas dinâmicas, " +
+                                "movimentos urbanos brandos e interações com o ambiente. " +
+                                "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
+                                " você já jogou."),
+                Jogo(R.drawable.spiderman,
+                        "SpiderMan",
+                        2018,
+                        "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
+                                "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
+                                "mecânica de combate improvisada, habilidades acrobáticas dinâmicas, " +
+                                "movimentos urbanos brandos e interações com o ambiente. " +
+                                "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
+                                " você já jogou."),
+                Jogo(R.drawable.spiderman,
+                        "SpiderMan",
+                        2018,
+                        "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
+                                "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
+                                "mecânica de combate improvisada, habilidades acrobáticas dinâmicas, " +
+                                "movimentos urbanos brandos e interações com o ambiente. " +
+                                "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
+                                " você já jogou."),
+                Jogo(R.drawable.spiderman,
+                        "SpiderMan",
+                        2018,
+                        "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
+                                "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
+                                "mecânica de combate improvisada, habilidades acrobáticas dinâmicas, " +
+                                "movimentos urbanos brandos e interações com o ambiente. " +
+                                "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
+                                " você já jogou."),
+                Jogo(R.drawable.spiderman,
+                        "SpiderMan",
+                        2018,
+                        "Após oito anos usando a máscara, Peter Parker agora é um mestre na luta " +
+                                "contra o crime. Sinta todo o poder de um Homem-Aranha mais experiente com uma " +
+                                "mecânica de combate improvisada, habilidades acrobáticas dinâmicas, " +
+                                "movimentos urbanos brandos e interações com o ambiente. " +
+                                "Não sendo mais um principiante, esse é o Homem-Aranha mais habilidoso que" +
+                                " você já jogou."))
     }
 
 }
